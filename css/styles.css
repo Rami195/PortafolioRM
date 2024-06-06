@@ -1,0 +1,197 @@
+body {
+    background-color: rgba(3,27,29,255);
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(3,27,29,255);
+    padding: 20px 0;
+}
+
+nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+.intro {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: rgba(3, 27, 29, 1); 
+}
+
+.intro-texto {
+    width: 40%; 
+    color: white; 
+    text-align: left;
+}
+
+.intro-texto span {
+    color: #dfe22f;
+}
+
+.sub-intro {
+    color: #374646;
+}
+
+.intro-texto button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.resume {
+    background-color: #dfe22f;
+    color: rgba(3, 27, 29, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(3, 27, 29, 1);
+}
+
+.hire {
+    border: 1px solid #dfe22f;
+    background-color: rgba(3, 27, 29, 1);
+    color: #dfe22f;
+    border-radius: 5px;
+}
+
+.intro-img {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.intro-img img {
+    max-width: 50%; 
+    border: 5px solid #dfe22f; 
+    border-radius: 10px; 
+    height: auto; 
+}
+
+.fa-solid.fa-arrow-right{
+    color: #dfe22f;
+}
+
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-image button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#services {
+    background-color: #182b36;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: #204b66;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background-color: #204b66;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#pricing {
+    background-color: #182b36;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #204b66;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #10212A;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #FFC107;
+    color: #000000;
+    cursor: pointer;
+}
