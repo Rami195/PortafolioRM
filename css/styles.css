@@ -1,6 +1,17 @@
+
 body {
-    background-color: rgba(3,27,29,255);
+    background-color:  #000000;
     color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 0px;
+}
+.fondo{
+    background-color: rgba(3,27,29,255);
+    border-radius: 5px;
+    border: 5px solid #dfe22f; 
+    margin-top: 10%;
+    margin-bottom: 0px;
 }
 
 header {
@@ -25,11 +36,12 @@ nav a {
     text-align: center;
     padding: 50px 20px;
 }
+/*---------------------------------------Introduccion ------------------------------------------------*/
 .intro {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 20px;
+   
     background-color: rgba(3, 27, 29, 1); 
 }
 
@@ -37,6 +49,8 @@ nav a {
     width: 40%; 
     color: white; 
     text-align: left;
+    padding-left: 10%;
+    
 }
 
 .intro-texto span {
@@ -63,7 +77,7 @@ nav a {
 }
 
 .hire {
-    border: 1px solid #dfe22f;
+
     background-color: rgba(3, 27, 29, 1);
     color: #dfe22f;
     border-radius: 5px;
@@ -80,12 +94,23 @@ nav a {
     border: 5px solid #dfe22f; 
     border-radius: 10px; 
     height: auto; 
+
 }
 
 .fa-solid.fa-arrow-right{
     color: #dfe22f;
 }
 
+/*---------------------------------------About ------------------------------------------------*/
+#about {
+    padding: 50px 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .about-image {
     text-align: center;
@@ -93,7 +118,7 @@ nav a {
 
 .about-image img {
     width: 200px;
-    border-radius: 50%;
+
 }
 
 .about-image button {
@@ -101,10 +126,45 @@ nav a {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    background-color: #dfe22f;
 }
 
+/*---------------------------------------Project ------------------------------------------------*/
+h2{
+    color: #dfe22f;
+    text-align: center;
+}
+
+.ContenedorProjectImg{
+    display: flex;
+    background-color: #374646;
+    justify-content:space-between;
+    width: 100%;
+    border: 1px solid white;
+
+}
+.ContenedorProject{
+    width: 90%;
+    padding-left: 10%;
+    background-color: rgba(3,27,29,255);
+}
+.project{
+    height: 80%;
+    width: 30%;
+    border: 1px solid rgb(204, 42, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  
+}
+div img{
+    width: 100%;
+}
+
+/*---------------------------------------Servicios ------------------------------------------------*/
 #services {
-    background-color: #182b36;
+    background-color: rgba(3, 27, 29, 1);
     padding: 50px 20px;
     text-align: center;
 }
@@ -116,30 +176,14 @@ nav a {
 }
 
 .service {
-    background-color: #204b66;
+    background-color:  rgba(3, 27, 29, 1)6;
     padding: 20px;
     border-radius: 5px;
 }
 
-#projects {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project {
-    background-color: #204b66;
-    padding: 20px;
-    border-radius: 5px;
-}
-
+/*---------------------------------------Planes ------------------------------------------------*/
 #pricing {
-    background-color: #182b36;
+    background-color: rgba(3, 27, 29, 1);
     padding: 50px 20px;
     text-align: center;
 }
@@ -151,13 +195,15 @@ nav a {
 }
 
 .plan {
-    background-color: #204b66;
+    background-color:  rgba(3, 27, 29, 1);
     padding: 20px;
     border-radius: 5px;
 }
 
+/*---------------------------------------Footer ------------------------------------------------*/
+
 footer {
-    background-color: #10212A;
+    background-color: rgba(3, 27, 29, 1);
     padding: 20px 0;
     text-align: center;
 }
