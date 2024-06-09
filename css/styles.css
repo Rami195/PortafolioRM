@@ -17,6 +17,10 @@ body {
 header {
     background-color: rgba(3,27,29,255);
     padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30%;
 }
 
 nav{
@@ -24,14 +28,34 @@ nav{
     display: flex;
     justify-content: center;
     gap: 30px;
+    
+}
+
+.boton a:hover{
+    border-bottom: 2px solid #dfe22f;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
+    text-align: center;
+    align-content: center;
+
 }
 
+.contacto{
+    border: 1px solid #dfe22f ;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 5px;
+}
+
+.contacto:hover{
+    background-color: #dfe22f;
+    color: rgba(3,27,29,255);
+}
 #home {
     text-align: center;
     padding: 50px 20px;
@@ -41,18 +65,20 @@ nav a {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-   
     background-color: rgba(3, 27, 29, 1); 
+ 
 }
 
 .intro-texto {
     width: 40%; 
     color: white; 
     text-align: left;
-    padding-left: 10%;
-    
+    align-content: left;
+    padding-left: 5%;
 }
-
+.intro-texto h1{
+    font-size: 40px;
+}
 .intro-texto span {
     color: #dfe22f;
 }
@@ -61,12 +87,13 @@ nav a {
     color: #374646;
 }
 
-.intro-texto button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
+.intro-texto nav {
     cursor: pointer;
-    font-size: 16px; 
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px; 
+    width: 60%;
 }
 
 .resume {
@@ -74,59 +101,146 @@ nav a {
     color: rgba(3, 27, 29, 1);
     border-radius: 5px;
     border: 1px solid rgba(3, 27, 29, 1);
+    width: 120px;
+    height: 30px;
 }
-
+.resume:hover{
+    background-color: rgba(3, 27, 29, 1);
+    color: #dfe22f;
+    border: 1px solid #dfe22f;;
+}
 .hire {
 
     background-color: rgba(3, 27, 29, 1);
     color: #dfe22f;
     border-radius: 5px;
+    border: 1px solid #dfe22f;;
+    width: 120px;
+    height: 30px;
 }
-
+.hire:hover{
+    background-color: #dfe22f;
+    color: rgba(3, 27, 29, 1);
+    border: 1px solid rgba(3, 27, 29, 1);
+}
 .intro-img {
-    width: 50%; 
+    
     display: flex;
     justify-content: center;
 }
 
 .intro-img img {
-    max-width: 50%; 
+    height: 10px;
+    width: 300px;  
     border: 5px solid #dfe22f; 
-    border-radius: 10px; 
+    border-radius: 20px; 
     height: auto; 
-
 }
 
 .fa-solid.fa-arrow-right{
     color: #dfe22f;
+    padding-right: 10px;
 }
 
 /*---------------------------------------About ------------------------------------------------*/
-#about {
-    padding: 50px 20px;
+
+.about{
+
+    padding: 10px 10px 10px 0;
 }
 
 .about-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    padding: 10px 10px 10px 0;
 }
 
 .about-image {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .about-image img {
-    width: 200px;
-
+    height: 300px;
+    width: 300px;  
+    border: 5px solid #dfe22f; 
+    border-radius: 20px; 
 }
 
 .about-image button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
+    border-radius: 10px;
     cursor: pointer;
     background-color: #dfe22f;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px ;
+}
+.about-text{
+    border: 1px solid white;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.about-text h2{
+    color: #dfe22f;
+    text-align: left;
+}
+.about-text h3{
+    color: white;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.about-text p{
+    color: rgba(129, 121, 121, 0.651);
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+/*---------------------------------------Habilidades ------------------------------------------------*/
+#skills {
+    background-color: rgba(3, 27, 29, 1);
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    justify-content:space-between;
+    width: 95%;
+    margin-left: 5%;
+    
+}
+.skills{
+    background-color: rgba(3,27,29,255);
+}
+
+.service {
+    background-color: #374646;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.service:hover{
+    background-color: white;
+    color: #374646;
+    
+}
+
+.service i{
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 0px 10px;
+    align-items: center;
+    align-content: center;
+    font-size: 100px;
+    
 }
 
 /*---------------------------------------Project ------------------------------------------------*/
@@ -140,104 +254,116 @@ h2{
     background-color: #374646;
     justify-content:space-between;
     width: 100%;
-    border: 1px solid white;
+    align-items: center;
+    padding: 15px 0px 30px 0px;
+    height: 200px;
 
 }
 .ContenedorProject{
-    width: 90%;
-    padding-left: 10%;
+    padding-left: 5%;
     background-color: rgba(3,27,29,255);
+    text-align: center;
 }
 .project{
     height: 80%;
     width: 30%;
-    border: 1px solid rgb(204, 42, 42);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-  
 }
-div img{
+.ContenedorProjectImg div img{
     width: 100%;
+    height: 100%;
 }
 
-/*---------------------------------------Servicios ------------------------------------------------*/
-#services {
-    background-color: rgba(3, 27, 29, 1);
-    padding: 50px 20px;
-    text-align: center;
-}
 
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service {
-    background-color:  rgba(3, 27, 29, 1)6;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-/*---------------------------------------Planes ------------------------------------------------*/
-#pricing {
-    background-color: rgba(3, 27, 29, 1);
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.pricing-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.plan {
-    background-color:  rgba(3, 27, 29, 1);
-    padding: 20px;
-    border-radius: 5px;
-}
 
 /*---------------------------------------Footer ------------------------------------------------*/
 
 footer {
     background-color: rgba(3, 27, 29, 1);
-    padding: 20px 0;
     text-align: center;
 }
 
+.Personal{
+    display: flex;
+    flex-direction: column;
+}
+
+.Products{
+    display: flex;
+    flex-direction: column;
+}
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Contenedor-text{
+    padding-left: 5%;
 }
 
-.footer-content div {
-    margin: 10px;
+.Columnas{
+    display: flex;
+    justify-content: space-between;
 }
 
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
 .social-media a {
     margin: 0 10px;
-    color: #FFC107;
+    color: #dfe22f;
     text-decoration: none;
 }
-
+.contact{
+    padding-right: 10px;
+    padding-bottom: 40px;
+    width: 400px;
+}
 .contact form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+.contact .name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
-.contact input, .contact button {
+.contact input, .contact nav {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    background-color:  rgba(3, 27, 29, 1);
+    border: 1px solid #dfe22f ;
+    text-align: center;
+    cursor: pointer;
+    color: #dfe22f;
 }
 
-.contact button {
-    background-color: #FFC107;
-    color: #000000;
-    cursor: pointer;
+
+h4{
+    color: #dfe22f;
 }
+
+.icon{
+    font-size: 15px;
+    border-radius: 50%;
+    border: 2px solid #dfe22f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.icon:hover{
+    border: 2px solid rgba(3,27,29,255);
+    background-color: #dfe22f;
+    color: rgba(3,27,29,255);
+}
+
