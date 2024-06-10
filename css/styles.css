@@ -1,6 +1,6 @@
 
 body {
-    background-color:  #000000;
+    background-color:  rgba(201,245,194,255);
     color: #ffffff;
     padding-left: 10%;
     padding-right: 10%;
@@ -28,9 +28,11 @@ nav{
     display: flex;
     justify-content: center;
     gap: 30px;
-    
-}
 
+}
+.boton{
+    transition: border-bottom 3s;
+}
 .boton a:hover{
     border-bottom: 2px solid #dfe22f;
 }
@@ -41,7 +43,6 @@ nav a {
     font-size: 18px;
     text-align: center;
     align-content: center;
-
 }
 
 .contacto{
@@ -50,6 +51,7 @@ nav a {
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
     margin-right: 5px;
+    transition: color 1s, background-color 1s;
 }
 
 .contacto:hover{
@@ -84,7 +86,7 @@ nav a {
 }
 
 .sub-intro {
-    color: #374646;
+    color: #a39ba3;
 }
 
 .intro-texto nav {
@@ -103,6 +105,7 @@ nav a {
     border: 1px solid rgba(3, 27, 29, 1);
     width: 120px;
     height: 30px;
+    transition: color 1s, background-color 1s;
 }
 .resume:hover{
     background-color: rgba(3, 27, 29, 1);
@@ -117,6 +120,7 @@ nav a {
     border: 1px solid #dfe22f;;
     width: 120px;
     height: 30px;
+    transition: color 1s, background-color 1s;
 }
 .hire:hover{
     background-color: #dfe22f;
@@ -124,7 +128,6 @@ nav a {
     border: 1px solid rgba(3, 27, 29, 1);
 }
 .intro-img {
-    
     display: flex;
     justify-content: center;
 }
@@ -151,8 +154,8 @@ nav a {
 
 .about-content {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     padding: 10px 10px 10px 0;
 }
@@ -172,36 +175,60 @@ nav a {
     border-radius: 20px; 
 }
 
-.about-image button {
-    border-radius: 10px;
-    cursor: pointer;
+.descarga{
+    margin-top: 20px;
     background-color: #dfe22f;
+    color: rgba(3, 27, 29, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(3, 27, 29, 1);
     width: 120px;
     height: 30px;
-    text-align: center;
-    margin-top: 20px ;
+    transition: color 1s, background-color 1s;
+}
+.descarga:hover{
+    background-color: rgba(3, 27, 29, 1);
+    color: #dfe22f;
+    border: 1px solid #dfe22f;;
 }
 .about-text{
-    border: 1px solid white;
+    margin-top: 0px;
+    padding-top: 0px;
     margin-left: 20px;
-    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .about-text h2{
     color: #dfe22f;
     text-align: left;
 }
 .about-text h3{
+   
     color: white;
-    text-align: left;
-    margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 18px;
+    transition: color 1s, background-color 1s;
+    margin-right: 50px;
+    padding-bottom: 0px;
+    border: 1px solid white;
 }
-.about-text p{
-    color: rgba(129, 121, 121, 0.651);
-    margin-top: 0px;
-    font-size: 10px;
+.about-text h3:hover{
+    border-bottom: 2px solid #dfe22f;
 }
 
+.info{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.info p{
+    color:#a39ba3;
+    font-size: 14px;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    width: 70%;
+}
 /*---------------------------------------Habilidades ------------------------------------------------*/
 #skills {
     background-color: rgba(3, 27, 29, 1);
@@ -219,20 +246,23 @@ nav a {
 }
 
 .service {
-    background-color: #374646;
+    background-color: rgba(30,51,54,255);
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    transition: all 1s;
 }
 .service:hover{
     background-color: white;
-    color: #374646;
+    color: rgba(30,51,54,255);
     
 }
-
+.service h3{
+    color: #a39ba3;
+}
 .service i{
     width: 200px;
     height: 200px;
@@ -251,7 +281,7 @@ h2{
 
 .ContenedorProjectImg{
     display: flex;
-    background-color: #374646;
+    background-color: rgba(30,51,54,255);
     justify-content:space-between;
     width: 100%;
     align-items: center;
@@ -272,11 +302,15 @@ h2{
     justify-content: center;
     border-radius: 10px;
 }
-.ContenedorProjectImg div img{
+.ContenedorProjectImg section img{
     width: 100%;
     height: 100%;
+    transition: width 1s, heigth 1s;
 }
-
+.ContenedorProjectImg section img:hover{
+    width: 110%;
+    height: 110%;
+}
 
 
 /*---------------------------------------Footer ------------------------------------------------*/
@@ -286,14 +320,13 @@ footer {
     text-align: center;
 }
 
-.Personal{
+.Tec{
     display: flex;
     flex-direction: column;
 }
-
-.Products{
-    display: flex;
-    flex-direction: column;
+.Tec p{
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 .footer-content {
     display: flex;
@@ -327,7 +360,7 @@ footer {
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 .contact .name {
     display: flex;
@@ -335,17 +368,35 @@ footer {
     width: 100%;
 }
 
-.contact input, .contact nav {
+.contact input{
     padding: 10px;
-    border: none;
     border-radius: 5px;
     background-color:  rgba(3, 27, 29, 1);
     border: 1px solid #dfe22f ;
     text-align: center;
     cursor: pointer;
     color: #dfe22f;
+    transition: color 1s, background-color 1s;
+    
+}
+.submit {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #999;
+    transition: color 1s, background-color 1s;
+    border: 1px solid #dfe22f ;
+    text-align: center;
+    cursor: pointer;
+    transition: color 1s, background-color 1s;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 
+.submit:hover{
+    background-color: #dfe22f;
+    color: rgba(3, 27, 29, 1);
+}
 
 h4{
     color: #dfe22f;
@@ -359,6 +410,7 @@ h4{
     justify-content: center;
     align-items: center;
     padding: 5px 5px 5px 5px;
+    transition: all 1s;
 }
 
 .icon:hover{

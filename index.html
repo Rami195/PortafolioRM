@@ -17,8 +17,8 @@
             <nav class="boton">
                 <a href="#home">Inicio</a>
                 <a href="#about">Sobre Mi</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#work">Proyectos</a>
+                <a href="#about">Experiencia</a>
+                <a href="#projects">Proyectos</a>
                 <a href="#skills">habilidades</a>
             </nav>
             <nav>
@@ -45,50 +45,59 @@
 
         <section class="about" id="about">
             <section class="about-content">
-                <div class="about-image">
+                <section class="about-image">
                     <img src="img/Perfil.jpg" alt="">
-                    <button>Download CV</button>
-                </div>
-                <div class="about-text">
+                    <nav>
+                        <a class="descarga" href="pdf/Cv Ramiro Martinez.pdf">Descargar CV</a>
+                    </nav>
+                </section>
+                <section class="about-text">
                     <h2>Sobre Mi</h2>
-                    <h3>Vida</h3>
-                    <p>Soy Ramiro Martinez, estudiante de ingeniería de sistemas, tengo 21 años. Con gran interés por la tecnología y disposición para aprender.</p>
-                    <h3>Educacion</h3>
-                    <p>Content about education.</p>
-                    <h3>Experiencia</h3>
-                    <p>Experiencia</p>
-                </div>
+                    <section class="info"> 
+                        <h3>Vida</h3>
+                        <p>Soy Ramiro Martinez, estudiante de ingeniería de sistemas, tengo 21 años. Con gran interés por la tecnología y disposición para aprender constantemente.</p>
+                    </section>
+                    <section class="info">
+                        <h3>Educacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia sequi dolores hic magnam voluptate accusamus quisquam placeat at illum quis ipsa libero totam consectetur, dolorum perferendis, autem neque nulla necessitatibus?</p>
+                    </section>
+                    <section class="info">
+                        <h3>Experiencia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam exercitationem, magnam error expedita sequi fuga cumque pariatur repellat assumenda, facere, ullam cupiditate corrupti voluptates maxime recusandae. Veritatis, quibusdam eos!</p>
+                    </section>
+               
+                </section>
             </section>
         </section>
 
         <section class="skills" id="skills">
             <h2>Mis Habilidades</h2>
             <section class="skills-container">
-                <div class="service">
+                <section class="service">
                     <i class="fa-brands fa-css3-alt"></i>
                     <h3>CSS</h3>
-                </div>
-                <div class="service">
+                </section>
+                <section class="service">
                     <i class="fa-brands fa-html5"></i>
                     <h3>HTML</h3>
-                </div>
-                <div class="service">
+                </section>
+                <section class="service">
                     <i class="fa-brands fa-js"></i>
                     <h3>JS</h3>
-                </div>
-                <div class="service">
+                </section>
+                <section class="service">
                     <i class="fa-brands fa-java"></i>
                     <h3>JAVA</h3>
-                </div>
+                </section>
             </section>
         </section>
 
         <section class="ContenedorProject" id="projects">
             <h2>Portafolio</h2>
             <section class="ContenedorProjectImg">
-                <div class="project"> <img src="img/Services.png" alt=""></div>
-                <div class="project"> <img src="img/login.png" alt=""></div>
-                <div class="project"> <img src="img/imagen.jpg" alt=""></div>
+                <section class="project"> <img src="img/Services.png" alt=""></section>
+                <section class="project"> <img src="img/login.png" alt=""></section>
+                <section class="project"> <img src="img/login.png" alt=""></section>
             </section>
         </section>
 
@@ -99,15 +108,19 @@
                 <section class="Contenedor-text">
                     
                     <section class="Columnas">
-                        <section class="Personal">
-                            <h4>Personal</h4>
-                            <p>Hola</p>
-                            <p>Hola1</p>
+                        <section class="Tec">
+                            <h4>Personalidad</h4>
+                            <p>Seguridad</p>
+                            <p>Integridad</p>
+                            <p>Confianza</p>
+                            <p>Etica</p>
                         </section>
-                        <section class="Products">
-                            <h4>Products</h4>
-                            <p>Hola</p>
-                            <p>Hola1</p>
+                        <section class="Tec">
+                            <h4>Tecnologias</h4>
+                            <p>Java</p>
+                            <p>CSS</p>
+                            <p>HTML</p>
+                            <p>JS</p>
                         </section>
                     </section>
                     <section class="social-media">
@@ -129,7 +142,9 @@
                                 <input type="text" placeholder="Apellido">
                             </div>
                             <input type="email" placeholder="Email">
-                            <nav type="submit"><a>Enviar</a></nav>
+                            <nav>
+                                <a class="submit" href="">Enviar</a>
+                            </nav>
                         </form>
                     </section>
             </section>   
