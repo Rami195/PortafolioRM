@@ -35,7 +35,7 @@ nav{
 .boton a:hover{
     border-bottom: 2px solid #dfe22f;
 }
-header  .fa-solid.fa-list.desaparece{
+header .desaparece{
     display: none;
 }
 
@@ -70,7 +70,6 @@ nav a {
     justify-content: space-between; 
     align-items: center; 
     background-color: rgba(3, 27, 29, 1); 
-    border: 1px solid red;
 }
 
 .intro-texto {
@@ -79,7 +78,7 @@ nav a {
     text-align: left;
     align-content: left;
     padding-left: 5%;
-    border: 1px solid white;
+
 }
 .intro-texto h1{
     font-size: 40px;
