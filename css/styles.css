@@ -35,6 +35,9 @@ nav{
 .boton a:hover{
     border-bottom: 2px solid #dfe22f;
 }
+header  .fa-solid.fa-list.desaparece{
+    display: none;
+}
 
 nav a {
     color: #ffffff;
@@ -67,6 +70,7 @@ nav a {
     justify-content: space-between; 
     align-items: center; 
     background-color: rgba(3, 27, 29, 1); 
+    border: 1px solid red;
 }
 
 .intro-texto {
@@ -75,7 +79,7 @@ nav a {
     text-align: left;
     align-content: left;
     padding-left: 5%;
-
+    border: 1px solid white;
 }
 .intro-texto h1{
     font-size: 40px;
@@ -246,7 +250,6 @@ nav a {
     justify-content:space-between;
     width: 95%;
     margin-left: 5%;
-
 }
 .skills{
     background-color: rgba(3,27,29,255);
@@ -264,6 +267,7 @@ nav a {
     transition: all 1s;
 }
 .service:hover{
+    background-color: white;
     color: rgba(30,51,54,255);
     
 }
