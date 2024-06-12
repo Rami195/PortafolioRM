@@ -1,37 +1,36 @@
 
 body {
-    background-color:  rgba(201,245,194,255);
+    background-color:   rgba(3,27,29,255);
     color: #ffffff;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 0px;
-}
-.fondo{
-    background-color: rgba(3,27,29,255);
-    border-radius: 5px;
-    border: 5px solid #dfe22f; 
-    margin-top: 10%;
     margin-bottom: 0px;
 }
 
+
 header {
     background-color: rgba(3,27,29,255);
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 30%;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid #dfe22f;
 }
 
 nav{
     list-style: none;
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     gap: 30px;
+
 
 }
 .boton{
     transition: border-bottom 3s;
+    margin-left: 35%;
 }
 .boton a:hover{
     border-bottom: 2px solid #dfe22f;
@@ -68,25 +67,32 @@ nav a {
     justify-content: space-between; 
     align-items: center; 
     background-color: rgba(3, 27, 29, 1); 
- 
 }
 
 .intro-texto {
-    width: 40%; 
+    width: 30%; 
     color: white; 
     text-align: left;
     align-content: left;
     padding-left: 5%;
+
 }
 .intro-texto h1{
     font-size: 40px;
+    width: 70%;
+
 }
 .intro-texto span {
     color: #dfe22f;
+   
 }
 
 .sub-intro {
     color: #a39ba3;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 70%;
+
 }
 
 .intro-texto nav {
@@ -95,7 +101,7 @@ nav a {
     align-items: center;
     justify-content: space-between;
     font-size: 10px; 
-    width: 60%;
+    width: 70%;
 }
 
 .resume {
@@ -130,14 +136,15 @@ nav a {
 .intro-img {
     display: flex;
     justify-content: center;
+    width: 30%;
 }
 
 .intro-img img {
-    height: 10px;
-    width: 300px;  
+    width: 100%;  
     border: 5px solid #dfe22f; 
     border-radius: 20px; 
     height: auto; 
+
 }
 
 .fa-solid.fa-arrow-right{
@@ -158,6 +165,7 @@ nav a {
     align-items: flex-start;
     width: 100%;
     padding: 10px 10px 10px 0;
+    margin-top: 5%;
 }
 
 .about-image {
@@ -205,14 +213,10 @@ nav a {
    
     color: white;
     font-size: 18px;
-    transition: color 1s, background-color 1s;
     margin-right: 50px;
     padding-bottom: 0px;
-    border: 1px solid white;
 }
-.about-text h3:hover{
-    border-bottom: 2px solid #dfe22f;
-}
+
 
 .info{
     display: flex;
@@ -228,7 +232,10 @@ nav a {
     text-align: left;
     align-content: center;
     width: 70%;
+
 }
+
+
 /*---------------------------------------Habilidades ------------------------------------------------*/
 #skills {
     background-color: rgba(3, 27, 29, 1);
@@ -239,10 +246,11 @@ nav a {
     justify-content:space-between;
     width: 95%;
     margin-left: 5%;
-    
+
 }
 .skills{
     background-color: rgba(3,27,29,255);
+    padding-top: 50px;
 }
 
 .service {
@@ -256,7 +264,6 @@ nav a {
     transition: all 1s;
 }
 .service:hover{
-    background-color: white;
     color: rgba(30,51,54,255);
     
 }
@@ -283,19 +290,18 @@ h2{
     display: flex;
     background-color: rgba(30,51,54,255);
     justify-content:space-between;
-    width: 100%;
+    width: 95%;
     align-items: center;
     padding: 15px 0px 30px 0px;
-    height: 200px;
-
+    margin-left: 5%;
 }
 .ContenedorProject{
-    padding-left: 5%;
+
     background-color: rgba(3,27,29,255);
     text-align: center;
+    padding-top: 50px;
 }
 .project{
-    height: 80%;
     width: 30%;
     display: flex;
     align-items: center;
@@ -304,12 +310,12 @@ h2{
 }
 .ContenedorProjectImg section img{
     width: 100%;
-    height: 100%;
     transition: width 1s, heigth 1s;
+    
 }
 .ContenedorProjectImg section img:hover{
-    width: 110%;
-    height: 110%;
+    width: 101%;
+    height: 101%;
 }
 
 
@@ -366,6 +372,12 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 20px;
+
+}
+.name input{
+    width: 40%;
+    gap: 20%;
 }
 
 .contact input{
@@ -400,6 +412,7 @@ footer {
 
 h4{
     color: #dfe22f;
+    text-align: center;
 }
 
 .icon{

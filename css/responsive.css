@@ -1,0 +1,227 @@
+@media (max-width: 1920px) {
+    .intro-texto {
+        width: 40%;
+    }
+
+    .intro-img {
+        width: 40%;
+    }
+
+    .about-content {
+        padding: 20px 10px;
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+}
+
+/* Estilos para tamaños medianos-grandes (1440px) */
+@media (max-width: 1440px) {
+    .intro-texto {
+        width: 45%;
+    }
+
+    .intro-img {
+        width: 45%;
+    }
+
+    .about-content {
+        padding: 20px 15px;
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+}
+
+/* Estilos para tamaños medianos (1280px) */
+@media (max-width: 1280px) {
+    .intro-texto {
+        width: 50%;
+    }
+
+    .intro-img {
+        width: 50%;
+    }
+
+    .about-content {
+        padding: 20px 20px;
+    }
+
+    .skills-container {
+        width: 95%;
+    }
+}
+
+/* Estilos para tamaños medianos-pequeños (1024px) */
+@media (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-texto, .intro-img {
+        width: 80%;
+        padding: 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-image {
+        width: 80%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container .service {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .ContenedorProjectImg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ContenedorProjectImg .project {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para tamaños pequeños (768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boton {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .intro-texto h1 {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .skills-container .service {
+        width: 90%;
+    }
+
+    .ContenedorProjectImg {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ContenedorProjectImg .project {
+        width: 100%;
+    }
+}
+
+/* Estilos para tamaños muy pequeños (420px) */
+@media (max-width: 420px) {
+    .intro-texto h1 {
+        font-size: 24px;
+    }
+
+    .intro-texto {
+        padding: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-container .service i {
+        font-size: 60px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Columnas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para tamaños muy pequeños (320px) */
+@media (max-width: 320px) {
+    .intro-texto h1 {
+        font-size: 20px;
+    }
+
+    .intro-texto {
+        padding: 5px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text h3 {
+        font-size: 14px;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-container .service i {
+        font-size: 50px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Columnas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
